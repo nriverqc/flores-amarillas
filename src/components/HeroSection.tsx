@@ -75,7 +75,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Subtitle */}
           <p className="text-base sm:text-xl text-slate-200/90 max-w-lg mx-auto lg:mx-0 font-sans leading-relaxed mb-6 font-normal">
-            Un pequeño detalle para celebrar este 21 de septiembre.
+            Un pequeño detalle para este 21 de septiembre
           </p>
 
           {/* Dedicated context box: Respectful, warm, genuine */}

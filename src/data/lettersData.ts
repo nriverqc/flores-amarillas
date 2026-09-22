@@ -6,9 +6,9 @@ export const flowersData: FlowerData[] = [
     name: 'Girasol Radiante',
     scientificName: 'Helianthus annuus',
     meaning: 'Un detalle bonito, alegría y buena vibra',
-    quote: '«Que este 21 de septiembre te saque una gran sonrisa e ilumine tu día.»',
-    description: 'El símbolo por excelencia de este día: luz, energía positiva y buenos deseos en cada pétalo.',
-    tag: 'Un detalle especial',
+    quote: '«Desde que nos conocimos en la reunión de mi prima me caíste súper bien.»',
+    description: 'El símbolo indiscutible de este día: buena energía, luz y el gusto de sacarte una sonrisa.',
+    tag: 'El detalle',
     colorScheme: {
       primary: '#f59e0b',
       secondary: '#fbbf24',
@@ -19,12 +19,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-girasol',
       flowerId: 'girasol',
       flowerName: 'Girasol Radiante',
-      title: 'Un detalle especial',
+      title: 'El detalle',
       subtitle: '21 de Septiembre • Día de las Flores Amarillas',
-      poeticQuote: '«No quería dejar pasar este día sin mandarte un detalle bonito.»',
+      poeticQuote: '«Espero que te gusten tanto como a mí me gusta hablar contigo.»',
       bodyParagraphs: [
         'Hola Lorena,',
-        'No quería dejar pasar este 21 de septiembre sin mandarte un detalle bonito. Aunque apenas nos estamos conociendo, me parece genial cada conversación y el tiempo que compartimos. Espero que este día te saque una sonrisa y que estas flores amarillas iluminen tu jornada.'
+        'No me podía quedar sin mandarte tus flores amarillas este 21 de septiembre. Desde que nos conocimos en la reunión de mi prima me caíste súper bien y no quería dejar pasar este día sin sacarte una sonrisa. Espero que te gusten tanto como a mí me gusta hablar contigo.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -35,10 +35,10 @@ export const flowersData: FlowerData[] = [
     id: 'rosa',
     name: 'Rosa Ámbar',
     scientificName: 'Rosa canina aurea',
-    meaning: 'Calma, buena energía y descubrir momentos',
-    quote: '«Sin afanes, disfrutando el momento y conociéndonos poco a poco.»',
-    description: 'Representa la tranquilidad de coincidir con alguien agradable y disfrutar de las conversaciones sin prisa.',
-    tag: 'Paso a paso',
+    meaning: 'Buena vibra, fluidez y espontaneidad',
+    quote: '«Me parece genial lo fluido y chévere que ha sido hablar contigo estos días.»',
+    description: 'Representa la buena energía y la frescura de hablar con alguien especial sin afanes.',
+    tag: 'La vibra',
     colorScheme: {
       primary: '#eab308',
       secondary: '#fef08a',
@@ -49,12 +49,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-rosa',
       flowerId: 'rosa',
       flowerName: 'Rosa Ámbar',
-      title: 'Paso a paso',
+      title: 'La vibra',
       subtitle: '21 de Septiembre • Día de las Flores Amarillas',
-      poeticQuote: '«Me gusta mucho la calma y la buena vibra con la que nos hemos ido conociendo.»',
+      poeticQuote: '«Me encanta la buena energía que transmites y lo espontáneo que ha sido todo.»',
       bodyParagraphs: [
         'Lorena,',
-        'Me gusta mucho la calma y la buena vibra con la que nos hemos ido conociendo. Sin afanes, disfrutando el momento y descubriendo lo especial que eres. Gracias por la buena compañía y la buena energía de siempre.'
+        'Me parece genial lo fluido y chévere que ha sido hablar contigo estos días. Aunque apenas nos estamos conociendo, la paso muy bien cada vez que charlamos. Me encanta la buena energía que transmites y lo espontáneo que ha sido todo.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -65,10 +65,10 @@ export const flowersData: FlowerData[] = [
     id: 'tulipan',
     name: 'Tulipán Solar',
     scientificName: 'Tulipa gesneriana',
-    meaning: 'Nuevos comienzos, sorpresas gratas y entusiasmo',
-    quote: '«Empezar a conocerte ha sido una sorpresa muy grata.»',
-    description: 'Simboliza los momentos alegres y los comienzos que traen frescura y entusiasmo sincero.',
-    tag: 'Un buen comienzo',
+    meaning: 'Alegrar los días, buena energía y gratas sorpresas',
+    quote: '«Desde ese día ha sido una sorpresa muy bacana empezar a conocerte.»',
+    description: 'Para quienes traen buena vibra y hacen que cada día tenga un toque diferente.',
+    tag: 'El motivo',
     colorScheme: {
       primary: '#fbbf24',
       secondary: '#fde68a',
@@ -79,12 +79,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-tulipan',
       flowerId: 'tulipan',
       flowerName: 'Tulipán Solar',
-      title: 'Un buen comienzo',
+      title: 'El motivo',
       subtitle: '21 de Septiembre • Día de las Flores Amarillas',
-      poeticQuote: '«Desear momentos bonitos y alegres a las personas que aportan algo lindo a tu vida.»',
+      poeticQuote: '«Dicen que el 21 de septiembre se regalan flores amarillas a las personas que le alegran a uno los días.»',
       bodyParagraphs: [
         'Hola Lorena,',
-        'Dicen que regalar flores amarillas el 21 de septiembre es una forma de desear momentos bonitos y alegres a las personas que aportan algo lindo a tu vida. Para mí, empezar a conocerte ha sido una sorpresa muy grata. Que tengas un día increíble.'
+        'Dicen que el 21 de septiembre se regalan flores amarillas a las personas que le alegran a uno los días y que traen buena vibra. Y la verdad, desde ese día ha sido una sorpresa muy bacana empezar a conocerte. Que tengas un día increíble.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -95,10 +95,10 @@ export const flowersData: FlowerData[] = [
     id: 'margarita',
     name: 'Margarita Silvestre',
     scientificName: 'Euryops pectinatus',
-    meaning: 'Interés sincero, risas compartidas y espontaneidad',
-    quote: '«Me motiva mucho seguir conociéndote y compartir risas.»',
-    description: 'Sencilla y honesta: el gusto de conectar de forma natural y compartir momentos alegres.',
-    tag: 'Interés genuino',
+    meaning: 'Interés sincero, risas y buenos momentos',
+    quote: '«Sinceramente me interesa mucho seguir conociéndote y compartir más momentos juntos.»',
+    description: 'La espontaneidad y las ganas de seguir compartiendo risas y ver qué va pasando.',
+    tag: 'El interés',
     colorScheme: {
       primary: '#fcd34d',
       secondary: '#fffbeb',
@@ -109,12 +109,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-margarita',
       flowerId: 'margarita',
       flowerName: 'Margarita Silvestre',
-      title: 'Interés genuino',
+      title: 'El interés',
       subtitle: '21 de Septiembre • Día de las Flores Amarillas',
-      poeticQuote: '«Sinceramente, me motiva mucho seguir conociéndote y ver a dónde nos lleva este camino.»',
+      poeticQuote: '«Sinceramente me interesa mucho seguir conociéndote, compartir más momentos juntos y ver qué va pasando.»',
       bodyParagraphs: [
         'Lorena,',
-        'Espero que disfrutes mucho esta pequeña experiencia interactiva. Sinceramente, me motiva mucho seguir conociéndote, compartir risas y ver a dónde nos lleva este camino. Disfruta mucho tus flores.'
+        'Ojalá te haya gustado este detalle diferente. Sinceramente me interesa mucho seguir conociéndote, compartir más momentos juntos y ver qué va pasando. Disfruta mucho tus flores.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -126,6 +126,6 @@ export const flowersData: FlowerData[] = [
 export const generalCelebrationData = {
   title: 'Flores Amarillas para Lorena 🌼',
   dateBadge: '21 de Septiembre',
-  heroSubtitle: 'Un pequeño detalle para celebrar este 21 de septiembre',
-  flowerBoyQuote: '«Un detalle sincero para sacarte una sonrisa en este 21 de septiembre.»',
+  heroSubtitle: 'Un pequeño detalle para este 21 de septiembre',
+  flowerBoyQuote: '«Desde que nos conocimos en la reunión de mi prima me caíste súper bien.»',
 };
