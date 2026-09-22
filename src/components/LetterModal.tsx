@@ -104,8 +104,8 @@ export const LetterModal: React.FC<LetterModalProps> = ({
                 ))}
               </div>
 
-              {/* Special CTA button for the date proposal */}
-              {onOpenDateModal && (
+              {/* Special CTA button for the date proposal - ONLY on Carta 3 (Tulipán) */}
+              {onOpenDateModal && letter.flowerId === 'tulipan' && (
                 <div className="my-4 pt-2">
                   <button
                     onClick={() => {
