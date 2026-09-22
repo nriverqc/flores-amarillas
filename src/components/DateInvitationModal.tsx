@@ -32,7 +32,7 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
     const templateParams = {
       name: "Lorena",
       from_name: "Lorena",
-      response_type: "¡Aceptó la cita en el Parque Zonal Gilma Jiménez!",
+      response_type: "¡Aceptó la cita en el Parque Gilma Jiménez!",
       message: "¡De una! Nos vemos el miércoles en la tarde en el Parque Gilma Jiménez.",
     };
 
@@ -167,7 +167,7 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
                 <p>
                   Aprovechando que ya es hora de que nos veamos en persona...{' '}
                   <strong className="text-amber-300 font-semibold">
-                    ¿te suena un helado o caminar un rato este miércoles en la tarde en el Parque Zonal Gilma Jiménez?
+                    ¿te suena un helado o caminar un rato este miércoles en la tarde en el Parque Gilma Jiménez?
                   </strong>
                 </p>
               </div>

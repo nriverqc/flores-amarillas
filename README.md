@@ -21,7 +21,7 @@ Una aplicación web interactiva, moderna, cálida y optimizada para dispositivos
   * **Tulipán (Desde la fiesta):** El recuerdo bacano de la fiesta de la prima y las ganas de organizar la primera salida solo los dos.
   * **Margarita (Hecho a tu medida):** Un detalle creado pensando únicamente en ella.
 * 🍦 **Invitación a Salida Integrada con EmailJS:**
-  * Propuesta: *"¿Te suena un helado o caminar un rato este miércoles en la tarde en el Parque Zonal Gilma Jiménez?"*
+  * Propuesta: *"¿Te suena un helado o caminar un rato este miércoles en la tarde en el Parque Gilma Jiménez?"*
   * **Opción A (Aceptar):** Notifica automáticamente a Nicolas por correo con EmailJS y activa confeti con mensaje de confirmación.
   * **Opción B (Sugerir otro lugar):** Formulario para que Lorena proponga otro lugar en la tarde y lo envíe directamente a Nicolas.
 * 📱 **Mobile-First Responsiveness:**
