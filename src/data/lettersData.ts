@@ -5,9 +5,9 @@ export const flowersData: FlowerData[] = [
     id: 'girasol',
     name: 'Girasol Radiante',
     scientificName: 'Helianthus annuus',
-    meaning: 'Flores que no se marchitan nunca',
-    quote: '«Estas flores las creé especialmente para ti y no se van a marchitar nunca.»',
-    description: 'Flores digitales hechas con dedicación para sacarte una sonrisa y recordarte lo especial que eres.',
+    meaning: 'Flores eternas que no se marchitan',
+    quote: '«Estas las creé especialmente para ti en código, y lo mejor es que no se van a marchitar nunca.»',
+    description: 'Creadas especialmente para sacarte una sonrisa y recordarte lo especial que eres para mí.',
     tag: 'Flores eternas',
     colorScheme: {
       primary: '#f59e0b',
@@ -19,12 +19,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-girasol',
       flowerId: 'girasol',
       flowerName: 'Girasol Radiante',
-      title: 'Flores que no se marchitan',
+      title: 'Flores eternas',
       subtitle: '21 de Septiembre • Creadas para ti',
       poeticQuote: '«No quería por nada del mundo que te quedaras sin tus flores amarillas.»',
       bodyParagraphs: [
         'Hola Lorena,',
-        'No quería por nada del mundo que te quedaras sin tus flores amarillas este 21 de septiembre. Quizás no son de esas que se compran en la esquina y se secan a la semana; estas las creé especialmente para ti, y lo mejor es que no se van a marchitar nunca. Quería sacarte una sonrisa y recordarte lo especial que eres para mí.'
+        'No quería por nada del mundo que te quedaras sin tus flores amarillas este 21 de septiembre. Quizás no son de esas que se compran en la esquina y se secan a la semana; estas las creé especialmente para ti en código, y lo mejor es que no se van a marchitar nunca. Quería sacarte una sonrisa y recordarte lo especial que eres para mí.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -35,10 +35,10 @@ export const flowersData: FlowerData[] = [
     id: 'rosa',
     name: 'Rosa Ámbar',
     scientificName: 'Rosa canina aurea',
-    meaning: 'Interés real y presente',
+    meaning: 'Interés sincero y real',
     quote: '«Aunque a veces los tiempos no cuadren tanto como quisiera, estás muy presente.»',
-    description: 'El gusto de saber de ti todos los días, contarnos cómo estuvo la jornada y mantener la conexión.',
-    tag: 'Interés real',
+    description: 'El gusto de saber de ti, contarnos cómo estuvo el día y mantener la conexión.',
+    tag: 'Interés sincero',
     colorScheme: {
       primary: '#eab308',
       secondary: '#fef08a',
@@ -49,8 +49,8 @@ export const flowersData: FlowerData[] = [
       id: 'carta-rosa',
       flowerId: 'rosa',
       flowerName: 'Rosa Ámbar',
-      title: 'Interés real',
-      subtitle: '21 de Septiembre • Entre el día a día',
+      title: 'Interés sincero',
+      subtitle: '21 de Septiembre • En el día a día',
       poeticQuote: '«Me encanta contarte cómo estuvo mi día, escuchar el tuyo y saber de ti.»',
       bodyParagraphs: [
         'Lorena,',
@@ -65,9 +65,9 @@ export const flowersData: FlowerData[] = [
     id: 'tulipan',
     name: 'Tulipán Solar',
     scientificName: 'Tulipa gesneriana',
-    meaning: 'Desde que nos conocimos',
-    quote: '«Hablar contigo se ha vuelto una de mis cosas favoritas.»',
-    description: 'La ilusión de volver a vernos y organizar nuestra primera salida juntos.',
+    meaning: 'Desde la fiesta y ganas de vernos',
+    quote: '«Tengo muchas ganas de que organicemos nuestra primera salida solo los dos.»',
+    description: 'La ilusión de volver a vernos en persona y pasar un rato tan bacano como esa noche.',
     tag: 'Desde la fiesta',
     colorScheme: {
       primary: '#fbbf24',
@@ -79,12 +79,12 @@ export const flowersData: FlowerData[] = [
       id: 'carta-tulipan',
       flowerId: 'tulipan',
       flowerName: 'Tulipán Solar',
-      title: 'Desde que nos conocimos',
+      title: 'Desde la fiesta',
       subtitle: '21 de Septiembre • Ganas de vernos',
-      poeticQuote: '«Tengo muchas ganas de que organicemos nuestra primera salida solo los dos.»',
+      poeticQuote: '«Hablar contigo se ha vuelto una de mis cosas favoritas.»',
       bodyParagraphs: [
         'Hola Lorena,',
-        'Parece increíble que no nos hayamos vuelto a ver en persona desde la fiesta de mi prima, pero hablar contigo se ha vuelto una de mis cosas favoritas. Tengo muchas ganas de que organicemos nuestra primera salida solo los dos y pasar un rato tan bacano como esa noche.'
+        'Parece increíble que no nos hayamos vuelto a ver en persona desde la fiesta de mi prima, pero hablar contigo se ha vuelto una de mis cosas favoritas. Tengo muchas ganas de que organizemos nuestra primera salida solo los dos y pasar un rato tan bacano como esa noche.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -95,10 +95,10 @@ export const flowersData: FlowerData[] = [
     id: 'margarita',
     name: 'Margarita Silvestre',
     scientificName: 'Euryops pectinatus',
-    meaning: 'Hecho a tu medida y paso a paso',
-    quote: '«Construí este detalle pensando únicamente en ti.»',
-    description: 'Un espacio digital creado para ti, avanzando con calma y con ganas de compartir más.',
-    tag: 'Hecho para ti',
+    meaning: 'Hecho a tu medida, paso a paso',
+    quote: '«Construí este rincón digital pensando únicamente en ti.»',
+    description: 'Avanzando paso a paso, disfrutando el proceso y con ganas de compartir más.',
+    tag: 'Hecho a tu medida',
     colorScheme: {
       primary: '#fcd34d',
       secondary: '#fffbeb',
@@ -111,10 +111,10 @@ export const flowersData: FlowerData[] = [
       flowerName: 'Margarita Silvestre',
       title: 'Hecho a tu medida',
       subtitle: '21 de Septiembre • Paso a paso',
-      poeticQuote: '«Para darte algo diferente que demuestre lo mucho que me importa seguir conociéndote.»',
+      poeticQuote: '«Para darte un detalle diferente que demuestre lo mucho que me importa seguir conociéndote.»',
       bodyParagraphs: [
         'Lorena,',
-        'Construí este detalle pensando únicamente en ti, para darte algo diferente que demuestre lo mucho que me importa seguir conociéndote. Vamos paso a paso, pero con muchas ganas de compartir más momentos juntos. Ojalá te haya gustado este rincón amarillo hecho para ti.'
+        'Construí este rincón digital pensando únicamente en ti, para darte un detalle diferente que demuestre lo mucho que me importa seguir conociéndote. Vamos paso a paso, disfrutando el proceso y con muchas ganas de compartir más momentos juntos. Disfruta mucho tus flores.'
       ],
       closing: 'Con cariño,',
       signature: 'Nicolas Rivera ✨',
@@ -127,5 +127,5 @@ export const generalCelebrationData = {
   title: 'Flores Amarillas para Lorena 🌼',
   dateBadge: '21 de Septiembre',
   heroSubtitle: 'Un pequeño detalle para este 21 de septiembre',
-  flowerBoyQuote: '«Flores que creé especialmente para ti y que nunca se van a marchitar.»',
+  flowerBoyQuote: '«Flores que creé especialmente para ti en código y que nunca se van a marchitar.»',
 };

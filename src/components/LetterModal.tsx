@@ -9,12 +9,14 @@ interface LetterModalProps {
   isOpen: boolean;
   letter: Letter | null;
   onClose: () => void;
+  onOpenDateModal?: () => void;
 }
 
 export const LetterModal: React.FC<LetterModalProps> = ({
   isOpen,
   letter,
   onClose,
+  onOpenDateModal,
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -101,6 +103,21 @@ export const LetterModal: React.FC<LetterModalProps> = ({
                   </p>
                 ))}
               </div>
+
+              {/* Special CTA button for the date proposal */}
+              {onOpenDateModal && (
+                <div className="my-4 pt-2">
+                  <button
+                    onClick={() => {
+                      onClose();
+                      onOpenDateModal();
+                    }}
+                    className="min-h-[44px] w-full py-2.5 px-4 rounded-2xl bg-gradient-to-r from-amber-500 via-yellow-400 to-amber-500 text-nightBg font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md shadow-amber-500/20 active:scale-95 transition-all touch-manipulation hover:scale-[1.01]"
+                  >
+                    <span>Tengo una propuesta para ti 🍦</span>
+                  </button>
+                </div>
+              )}
 
               {/* Signature / Closing */}
               <div className="mt-6 pt-4 border-t border-amber-300/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
