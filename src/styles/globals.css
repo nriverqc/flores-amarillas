@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-gold-glow: 250 204 21;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #08060c;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(234, 179, 8, 0.15), transparent),
+      radial-gradient(circle at 15% 50%, rgba(245, 158, 11, 0.08), transparent 35%),
+      radial-gradient(circle at 85% 75%, rgba(251, 191, 36, 0.06), transparent 40%);
+    background-attachment: fixed;
+  }
+}
+
+/* Glassmorphism custom utilities */
+.glass-panel {
+  background: rgba(18, 16, 26, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(250, 204, 21, 0.14);
+}
+
+.glass-card {
+  background: rgba(22, 19, 32, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(251, 191, 36, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 25px -5px rgba(245, 158, 11, 0.12);
+}
+
+.glass-card:hover {
+  border-color: rgba(250, 204, 21, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 35px 2px rgba(245, 158, 11, 0.22);
+}
+
+.glass-golden {
+  background: linear-gradient(135deg, rgba(254, 240, 138, 0.15) 0%, rgba(245, 158, 11, 0.08) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(254, 240, 138, 0.3);
+  box-shadow: 0 15px 35px -5px rgba(234, 179, 8, 0.25);
+}
+
+.parchment-letter {
+  background: radial-gradient(circle at center, #fffdfa 0%, #fef8ee 60%, #faebd7 100%);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 45px rgba(245, 158, 11, 0.35);
+  border: 1px solid rgba(217, 119, 6, 0.35);
+}
+
+/* Custom golden shimmer text */
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #fef08a 0%, #facc15 25%, #fffbeb 50%, #facc15 75%, #ca8a04 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09080e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}

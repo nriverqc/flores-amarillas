@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbeb" stop-opacity="1" />
+      <stop offset="40%" stop-color="#fde047" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="60%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#713f12" />
+      <stop offset="65%" stop-color="#451a03" />
+      <stop offset="100%" stop-color="#270c02" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="50" cy="50" r="46" fill="url(#sunGlow)" />
+
+  <!-- Outer Petals Layer 1 (16 petals) -->
+  <g transform="translate(50,50)">
+    <g transform="rotate(0)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(22.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(45)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(67.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(90)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(112.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(135)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(157.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(180)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(202.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(225)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(247.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(270)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(292.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(315)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+    <g transform="rotate(337.5)"><path d="M-5,-12 C-9,-25 0,-44 0,-44 C0,-44 9,-25 5,-12 Z" fill="url(#petalGrad)" /></g>
+  </g>
+
+  <!-- Inner Flower Center -->
+  <circle cx="50" cy="50" r="16" fill="url(#centerGrad)" stroke="#a16207" stroke-width="1.5" />
+
+  <!-- Pistil dots texture -->
+  <circle cx="50" cy="50" r="3" fill="#eab308" opacity="0.8" />
+  <circle cx="45" cy="48" r="1.8" fill="#ca8a04" opacity="0.9" />
+  <circle cx="55" cy="49" r="1.8" fill="#ca8a04" opacity="0.9" />
+  <circle cx="48" cy="54" r="1.8" fill="#eab308" opacity="0.8" />
+  <circle cx="53" cy="44" r="1.6" fill="#fef08a" opacity="0.9" />
+  <circle cx="44" cy="53" r="1.5" fill="#facc15" opacity="0.8" />
+  <circle cx="56" cy="54" r="1.5" fill="#fef08a" opacity="0.8" />
+</svg>
