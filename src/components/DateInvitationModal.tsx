@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, MapPin, CheckCircle2, Loader2, Sparkles, Heart } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_CONFIG } from '../config/emailjs';
-import { fireGoldenConfetti } from './ConfettiTrigger';
+import { triggerSunflowerConfetti } from './ConfettiTrigger';
 import { soundFx } from './AudioEffects';
 
 interface DateInvitationModalProps {
@@ -21,31 +21,40 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
   const [statusType, setStatusType] = useState<'accepted' | 'suggested' | null>(null);
 
-  // Option A: Accept invitation
+  // Opción A: Aceptar la invitación
   const handleAccept = async () => {
     setIsLoading(true);
     soundFx.playSparkle();
 
+    // Disparar inmediatamente la lluvia de girasoles y flores amarillas
+    triggerSunflowerConfetti();
+
     const templateParams = {
       name: "Lorena",
+      from_name: "Lorena",
       response_type: "¡Aceptó la cita en el Parque Zonal Gilma Jiménez!",
-      message: "¡De una! Nos vemos el miércoles en la tarde en el Parque Gilma Jiménez."
+      message: "¡De una! Nos vemos el miércoles en la tarde en el Parque Gilma Jiménez.",
     };
 
+    console.log("📤 Intentando enviar correo a través de EmailJS con datos:", templateParams);
+
     try {
-      await emailjs.send(
+      const response = await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
         templateParams,
         EMAILJS_CONFIG.PUBLIC_KEY
       );
-      fireGoldenConfetti();
+      console.log("✅ ¡Correo enviado exitosamente!", response.status, response.text);
       setStatusType('accepted');
       setStatusMessage("¡Excelente! Ya me llegó tu confirmación. Nos vemos el miércoles 😉");
-    } catch (error) {
-      console.error("Error al enviar con EmailJS:", error);
-      // Even if network glitches, confirm visual delight
-      fireGoldenConfetti();
+    } catch (error: unknown) {
+      console.error("❌ Error crítico enviando correo vía EmailJS:", error);
+      const errText = (error as { text?: string; message?: string })?.text || (error as { message?: string })?.message;
+      if (errText) {
+        console.error("ℹ️ Detalle de la respuesta de EmailJS:", errText);
+      }
+      // Mostrar confirmación visual de todos modos para no arruinar la experiencia de Lorena
       setStatusType('accepted');
       setStatusMessage("¡Excelente! Ya me llegó tu confirmación. Nos vemos el miércoles 😉");
     } finally {
@@ -53,7 +62,7 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
     }
   };
 
-  // Option B: Submit new place suggestion
+  // Opción B: Sugerir otro lugar
   const handleSubmitSuggestion = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!suggestionText.trim()) return;
@@ -61,23 +70,34 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
     setIsLoading(true);
     soundFx.playSubtleChime();
 
+    // Disparar lluvia de girasoles y flores
+    triggerSunflowerConfetti();
+
     const templateParams = {
       name: "Lorena",
+      from_name: "Lorena",
       response_type: "Sugirió otro lugar para la cita",
-      message: suggestionText.trim()
+      message: suggestionText.trim(),
     };
 
+    console.log("📤 Intentando enviar correo a través de EmailJS con datos:", templateParams);
+
     try {
-      await emailjs.send(
+      const response = await emailjs.send(
         EMAILJS_CONFIG.SERVICE_ID,
         EMAILJS_CONFIG.TEMPLATE_ID,
         templateParams,
         EMAILJS_CONFIG.PUBLIC_KEY
       );
+      console.log("✅ ¡Correo enviado exitosamente!", response.status, response.text);
       setStatusType('suggested');
       setStatusMessage("¡Anotado! Ya le llegó tu propuesta a Nicolas 📩");
-    } catch (error) {
-      console.error("Error al enviar sugerencia con EmailJS:", error);
+    } catch (error: unknown) {
+      console.error("❌ Error crítico enviando correo vía EmailJS:", error);
+      const errText = (error as { text?: string; message?: string })?.text || (error as { message?: string })?.message;
+      if (errText) {
+        console.error("ℹ️ Detalle de la respuesta de EmailJS:", errText);
+      }
       setStatusType('suggested');
       setStatusMessage("¡Anotado! Ya le llegó tu propuesta a Nicolas 📩");
     } finally {
@@ -87,7 +107,6 @@ export const DateInvitationModal: React.FC<DateInvitationModalProps> = ({
 
   const handleResetAndClose = () => {
     onClose();
-    // Delay reset so animation finishes
     setTimeout(() => {
       setIsSuggesting(false);
       setSuggestionText('');
